@@ -1,0 +1,26 @@
+! Author:  Julian R Yon <julian@julianyon.net>
+! Date:    2013-08-31
+! Licence: Public domain (CC0)
+!          http://creativecommons.org/publicdomain/zero/1.0/
+!          To the extent possible under law, the author has waived all
+!          copyright and related or neighboring rights to this work.
+!          Acknowledgement is appreciated, but not required.
+!
+! I use a US Colemak layout with a UK keyboard. These have an extra key
+! over the US models, which can be used for Compose. It's also a reasonable
+! place to reinstate Caps Lock, which I have to use on occasion due to a
+! disability which affects my typing.
+keycode 94        = Multi_key Caps_Lock Multi_key Caps_Lock notequal plusminus notequal plusminus
+
+! My X installation doesn't include a Compose binding for ≈ (approxeq) but
+! it seems natural to put it on the tilde key.
+keysym  grave     = grave asciitilde grave asciitilde dead_tilde approxeq dead_tilde approxeq
+
+! The following are unnecessary, but it does no harm to have a few
+! shortcuts available.
+keysym  comma     = comma less comma less dead_cedilla lessthanequal dead_cedilla lessthanequal
+keysym  period    = period greater period greater dead_abovedot greaterthanequal dead_abovedot greaterthanequal
+keysym  m         = m M m M dead_macron mu dead_macron mu
+keysym  backslash = backslash bar backslash bar numerosign brokenbar numerosign brokenbar
+keysym  s         = s S s S ssharp section ssharp section
+keysym  r         = r R r R dead_grave paragraph dead_grave paragraph

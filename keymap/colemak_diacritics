@@ -1,0 +1,43 @@
+############################################################################
+# Copyright (c) 2013 Julian R Yon <julian@julianyon.net>
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+# 
+# 1.  Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+# 
+# 2.  Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+# IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+# TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+# PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+# TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+# PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+# LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+############################################################################
+# Windows' handling of spacing accents is somewhat unintuitive, so make
+# things a little more friendly.
+# Mapped elsewhere: abovering (as degree), circumflex, grave, tilde.
+
+sequence acute      dead_acute       dead_acute       BackSpace
+sequence macron     dead_macron      dead_macron      BackSpace
+sequence breve      dead_breve       dead_breve       BackSpace
+sequence abovedot   dead_abovedot    dead_abovedot    BackSpace
+sequence diaeresis  dead_diaeresis   dead_diaeresis   BackSpace
+sequence 0x10002dd  dead_doubleacute dead_doubleacute BackSpace
+sequence 0x01bd     dead_doubleacute dead_doubleacute BackSpace
+sequence caron      dead_caron       dead_caron       BackSpace
+sequence cedilla    dead_cedilla     dead_cedilla     BackSpace
+sequence ogonek     dead_ogonek      dead_ogonek      BackSpace
+

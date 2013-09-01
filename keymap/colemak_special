@@ -1,0 +1,82 @@
+############################################################################
+# Copyright (c) 2013 Julian R Yon <julian@julianyon.net>
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+# 
+# 1.  Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+# 
+# 2.  Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+# IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+# TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+# PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+# TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+# PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+# LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+############################################################################
+# A few uncommon characters can be entered on Mac/Win Colemak using the 
+# AltGr-\ "special" dead key. Here we borrow Multi_key as a substitute
+# so these characters can be passed through.
+
+Multi_key 0x2b altgr
+
+# brokenbar
+sequence 0x10000a6  Multi_key bar
+sequence 0x00a6     Multi_key bar
+# section
+sequence 0x10000a7  Multi_key s
+sequence 0x00a7     Multi_key s
+# copyright
+sequence 0x10000a9  Multi_key c
+sequence 0x00a9     Multi_key c
+# registered
+sequence 0x10000ae  Multi_key r
+sequence 0x00ae     Multi_key r
+# degree
+sequence 0x10000b0  Multi_key d
+sequence 0x00b0     Multi_key d
+# mu (micro)
+sequence 0x10000b5  Multi_key m
+sequence 0x00b5     Multi_key m
+# paragraph
+sequence 0x10000b6  Multi_key p
+sequence 0x00b6     Multi_key p
+# permille
+sequence 0x1002030  Multi_key percent
+sequence 0x0ad5     Multi_key percent
+# ellipsis
+sequence 0x1002026  Multi_key period
+sequence 0x0aae     Multi_key period
+# numerosign
+sequence 0x1002116  Multi_key n
+sequence 0x06b0     Multi_key n
+# trademark
+sequence 0x1002122  Multi_key t
+sequence 0x0ac9     Multi_key t
+# approxeq
+sequence 0x1002248  Multi_key asciitilde
+# notequal
+sequence 0x1002260  Multi_key equal
+sequence 0x08bd     Multi_key equal
+# lessthanequal
+sequence 0x1002264  Multi_key less
+sequence 0x08bc     Multi_key less
+# greaterthanequal
+sequence 0x1002265  Multi_key greater
+sequence 0x08be     Multi_key greater
+# plusminus
+sequence 0x10000b1  Multi_key plus
+sequence 0x00b1     Multi_key plus
+

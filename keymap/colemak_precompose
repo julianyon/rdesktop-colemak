@@ -1,0 +1,615 @@
+############################################################################
+# Copyright (c) 2013 Julian R Yon <julian@julianyon.net>
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+# 
+# 1.  Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+# 
+# 2.  Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+# IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+# TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+# PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+# TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+# PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+# LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+############################################################################
+# I've attempted to ensure that there are mappings for every composed
+# alphabetic character that can be entered via Colemak. It turns out that
+# there's rather a lot. Feel free to let me know if I've missed any.
+# Note that being able to type a character does not guarantee meaningful
+# output; that's the server's job.
+
+############################################################################
+# abovedot
+# NB. I => dotted I, i => dotLESS i, j => dotLESS j
+
+sequence 0x1000226  dead_abovedot A
+sequence 0x1001e02  dead_abovedot B
+sequence 0x100010a  dead_abovedot C
+sequence 0x02c5     dead_abovedot C
+sequence 0x1001e0a  dead_abovedot D
+sequence 0x1000116  dead_abovedot E
+sequence 0x03cc     dead_abovedot E
+sequence 0x1001e1e  dead_abovedot F
+sequence 0x1000120  dead_abovedot G
+sequence 0x02d5     dead_abovedot G
+sequence 0x1001e22  dead_abovedot H
+sequence 0x1000130  dead_abovedot I
+sequence 0x02a9     dead_abovedot I
+sequence 0x100013f  dead_abovedot L
+sequence 0x1001e40  dead_abovedot M
+sequence 0x1001e44  dead_abovedot N
+sequence 0x100022e  dead_abovedot O
+sequence 0x1001e56  dead_abovedot P
+sequence 0x1001e58  dead_abovedot R
+sequence 0x1001e60  dead_abovedot S
+sequence 0x1001e6a  dead_abovedot T
+sequence 0x1001e86  dead_abovedot W
+sequence 0x1001e8a  dead_abovedot X
+sequence 0x1001e8e  dead_abovedot Y
+sequence 0x100017b  dead_abovedot Z
+sequence 0x01af     dead_abovedot Z
+sequence 0x1000227  dead_abovedot a
+sequence 0x1001e03  dead_abovedot b
+sequence 0x100010b  dead_abovedot c
+sequence 0x02e5     dead_abovedot c
+sequence 0x1001e0b  dead_abovedot d
+sequence 0x1000117  dead_abovedot e
+sequence 0x03ec     dead_abovedot e
+sequence 0x1001e1f  dead_abovedot f
+sequence 0x1000121  dead_abovedot g
+sequence 0x02f5     dead_abovedot g
+sequence 0x1001e23  dead_abovedot h
+sequence 0x1000131  dead_abovedot i
+sequence 0x02b9     dead_abovedot i
+sequence 0x1000237  dead_abovedot j
+sequence 0x1000140  dead_abovedot l
+sequence 0x1001e41  dead_abovedot m
+sequence 0x1001e45  dead_abovedot n
+sequence 0x100022f  dead_abovedot o
+sequence 0x1001e57  dead_abovedot p
+sequence 0x1001e59  dead_abovedot r
+sequence 0x1001e61  dead_abovedot s
+sequence 0x1001e9b  dead_abovedot s
+sequence 0x1001e6b  dead_abovedot t
+sequence 0x1001e87  dead_abovedot w
+sequence 0x1001e8b  dead_abovedot x
+sequence 0x1001e8f  dead_abovedot y
+sequence 0x100017c  dead_abovedot z
+sequence 0x01bf     dead_abovedot z
+
+############################################################################
+# abovering
+
+sequence 0x100016e  dead_abovering U
+sequence 0x01d9     dead_abovering U
+sequence 0x100016f  dead_abovering u
+sequence 0x01f9     dead_abovering u
+sequence 0x1001e98  dead_abovering w
+sequence 0x1001e99  dead_abovering y
+
+############################################################################
+# acute
+
+sequence 0x10001fc  dead_acute AE
+sequence 0x1000106  dead_acute C
+sequence 0x01c6     dead_acute C
+sequence 0x10001f4  dead_acute G
+sequence 0x1001e30  dead_acute K
+sequence 0x1000139  dead_acute L
+sequence 0x01c5     dead_acute L
+sequence 0x1001e3e  dead_acute M
+sequence 0x1000143  dead_acute N
+sequence 0x01d1     dead_acute N
+# XXX Collides with 0x01fe tcedilla
+sequence 0x10001fe  dead_acute Oslash
+sequence 0x1001e54  dead_acute P
+sequence 0x1000154  dead_acute R
+sequence 0x01c0     dead_acute R
+sequence 0x100015a  dead_acute S
+sequence 0x001a6    dead_acute S
+sequence 0x1001e82  dead_acute W
+sequence 0x10000dd  dead_acute Y
+sequence 0x00dd     dead_acute Y
+sequence 0x1000179  dead_acute Z
+sequence 0x01ac     dead_acute Z
+sequence 0x10001fd  dead_acute ae
+sequence 0x1000107  dead_acute c
+sequence 0x01e6     dead_acute c
+# XXX Collides with 0x01f5 odoubleacute
+sequence 0x10001f5  dead_acute g 
+sequence 0x1001e31  dead_acute k
+sequence 0x100013a  dead_acute l
+sequence 0x01e5     dead_acute l
+sequence 0x1001e3f  dead_acute m
+sequence 0x1000144  dead_acute n
+sequence 0x01f1     dead_acute n
+# XXX Collides with 0x01ff abovedot
+sequence 0x10001ff  dead_acute oslash
+sequence 0x1001e55  dead_acute p
+sequence 0x1000155  dead_acute r
+sequence 0x01e0     dead_acute r
+sequence 0x100015b  dead_acute s
+sequence 0x01b6     dead_acute s
+sequence 0x1001e83  dead_acute w
+sequence 0x10000fd  dead_acute y
+sequence 0x00fd     dead_acute y
+sequence 0x100017a  dead_acute z
+sequence 0x01bc     dead_acute z
+
+############################################################################
+# breve
+
+sequence 0x1000102  dead_breve A
+sequence 0x01c3     dead_breve A
+sequence 0x1000114  dead_breve E
+sequence 0x100011e  dead_breve G
+sequence 0x02ab     dead_breve G
+sequence 0x100012c  dead_breve I
+sequence 0x100014e  dead_breve O
+sequence 0x100016c  dead_breve U
+sequence 0x02dd     dead_breve U
+sequence 0x1000103  dead_breve a
+sequence 0x01e3     dead_breve a
+sequence 0x1000115  dead_breve e
+sequence 0x100011f  dead_breve g
+sequence 0x02bb     dead_breve g
+sequence 0x100012d  dead_breve i
+sequence 0x100014f  dead_breve o
+sequence 0x100016d  dead_breve u
+sequence 0x02fd     dead_breve u
+
+############################################################################
+# caron
+
+sequence 0x10001cd  dead_caron A
+sequence 0x100010c  dead_caron C
+sequence 0x01c8     dead_caron C
+sequence 0x100010e  dead_caron D
+sequence 0x01cf     dead_caron D
+sequence 0x100011a  dead_caron E
+sequence 0x01cc     dead_caron E
+sequence 0x10001e6  dead_caron G
+sequence 0x100021e  dead_caron H
+sequence 0x10001cf  dead_caron I
+# XXX Collides with 0x01e8 ccaron
+sequence 0x10001e8  dead_caron K
+sequence 0x100013d  dead_caron L
+sequence 0x01a5     dead_caron L
+sequence 0x1000147  dead_caron N
+sequence 0x01d2     dead_caron N
+sequence 0x10001d1  dead_caron O
+sequence 0x01d1     dead_caron O
+sequence 0x1000158  dead_caron R
+sequence 0x01d8     dead_caron R
+sequence 0x1000160  dead_caron S
+sequence 0x01a9     dead_caron S
+sequence 0x1000164  dead_caron T
+sequence 0x10001d3  dead_caron U
+sequence 0x100017d  dead_caron Z
+sequence 0x10001ce  dead_caron a
+sequence 0x100010d  dead_caron c
+sequence 0x01e8     dead_caron c
+sequence 0x100010f  dead_caron d
+sequence 0x01ef     dead_caron d
+sequence 0x100011b  dead_caron e
+sequence 0x01ec     dead_caron e
+sequence 0x10001e7  dead_caron g
+sequence 0x100021f  dead_caron h
+# XXX Collides with 0x01d0 Dstroke
+sequence 0x10001d0  dead_caron i
+# XXX Collides with 0x01f0 dstroke
+sequence 0x10001f0  dead_caron j
+sequence 0x10001e9  dead_caron k
+sequence 0x100013e  dead_caron l
+sequence 0x01b5     dead_caron l
+sequence 0x1000148  dead_caron n
+sequence 0x01df     dead_caron n
+sequence 0x10001d2  dead_caron o
+sequence 0x01d2     dead_caron o
+sequence 0x1000159  dead_caron r
+sequence 0x01f8     dead_caron r
+sequence 0x1000161  dead_caron s
+sequence 0x01b9     dead_caron s
+sequence 0x01ab     dead_caron t
+sequence 0x1000165  dead_caron t
+sequence 0x01bb     dead_caron t
+sequence 0x10001d4  dead_caron u
+sequence 0x100017e  dead_caron z
+
+############################################################################
+# cedilla
+
+sequence 0x10000c7  dead_cedilla C
+sequence 0x00c7     dead_cedilla C
+sequence 0x1001e10  dead_cedilla D
+sequence 0x1000228  dead_cedilla E
+sequence 0x1000122  dead_cedilla G
+sequence 0x03ab     dead_cedilla G
+sequence 0x1001e28  dead_cedilla H
+sequence 0x1000136  dead_cedilla K
+sequence 0x03d3     dead_cedilla K
+sequence 0x100013b  dead_cedilla L
+sequence 0x03a6     dead_cedilla L
+sequence 0x1000145  dead_cedilla N
+sequence 0x03d1     dead_cedilla N
+sequence 0x1000156  dead_cedilla R
+sequence 0x03a3     dead_cedilla R
+sequence 0x100015e  dead_cedilla S
+sequence 0x01aa     dead_cedilla S
+sequence 0x1000162  dead_cedilla T
+sequence 0x01de     dead_cedilla T
+sequence 0x10000e7  dead_cedilla c
+sequence 0x00e7     dead_cedilla c
+sequence 0x1001e11  dead_cedilla d
+sequence 0x1000229  dead_cedilla e
+sequence 0x1000123  dead_cedilla g
+sequence 0x03bb     dead_cedilla g
+sequence 0x1001e29  dead_cedilla h
+sequence 0x1000137  dead_cedilla k
+sequence 0x03f3     dead_cedilla k
+sequence 0x100013c  dead_cedilla l
+sequence 0x03b6     dead_cedilla l
+sequence 0x1000146  dead_cedilla n
+sequence 0x03f1     dead_cedilla n
+sequence 0x1000157  dead_cedilla r
+sequence 0x03b3     dead_cedilla r
+sequence 0x100015f  dead_cedilla s
+sequence 0x01ba     dead_cedilla s
+sequence 0x1000163  dead_cedilla t
+sequence 0x01fe     dead_cedilla t
+
+############################################################################
+# circumflex
+
+sequence 0x10000c2  dead_circumflex A
+sequence 0x00c2     dead_circumflex A
+sequence 0x1000108  dead_circumflex C
+sequence 0x02c6     dead_circumflex C
+sequence 0x10000ca  dead_circumflex E
+sequence 0x00ca     dead_circumflex E
+sequence 0x100011c  dead_circumflex G
+sequence 0x02d8     dead_circumflex G
+sequence 0x1000124  dead_circumflex H
+sequence 0x02a6     dead_circumflex H
+sequence 0x10000ce  dead_circumflex I
+sequence 0x00ce     dead_circumflex I
+sequence 0x1000134  dead_circumflex J
+sequence 0x02ac     dead_circumflex J
+sequence 0x10000d4  dead_circumflex O
+sequence 0x00d4     dead_circumflex O
+sequence 0x100015c  dead_circumflex S
+sequence 0x02de     dead_circumflex S
+sequence 0x10000db  dead_circumflex U
+sequence 0x00db     dead_circumflex U
+sequence 0x1000174  dead_circumflex W
+sequence 0x1000176  dead_circumflex Y
+sequence 0x1001e90  dead_circumflex Z
+sequence 0x10000e2  dead_circumflex a
+sequence 0x00e2     dead_circumflex a
+sequence 0x1000109  dead_circumflex c
+sequence 0x02e6     dead_circumflex c
+sequence 0x10000ea  dead_circumflex e
+sequence 0x00ea     dead_circumflex e
+sequence 0x100011d  dead_circumflex g
+sequence 0x02f8     dead_circumflex g
+sequence 0x1000125  dead_circumflex h
+sequence 0x02b6     dead_circumflex h
+sequence 0x10000ee  dead_circumflex i
+sequence 0x00ee     dead_circumflex i
+sequence 0x1000135  dead_circumflex j
+sequence 0x02bc     dead_circumflex j
+sequence 0x10000f4  dead_circumflex o
+sequence 0x00f4     dead_circumflex o
+sequence 0x100015d  dead_circumflex s
+sequence 0x02fe     dead_circumflex s
+sequence 0x10000fb  dead_circumflex u
+sequence 0x00fb     dead_circumflex u
+sequence 0x1000175  dead_circumflex w
+sequence 0x1000177  dead_circumflex y
+sequence 0x1001e91  dead_circumflex z
+
+############################################################################
+# diaeresis
+
+sequence 0x10000cb  dead_diaeresis E
+sequence 0x00cb     dead_diaeresis E
+sequence 0x1001e26  dead_diaeresis H
+sequence 0x10000cf  dead_diaeresis I
+sequence 0x00cf     dead_diaeresis I
+sequence 0x1001e84  dead_diaeresis W
+sequence 0x1001e8c  dead_diaeresis X
+sequence 0x1000178  dead_diaeresis Y
+sequence 0x13be     dead_diaeresis Y
+sequence 0x10000eb  dead_diaeresis e
+sequence 0x00eb     dead_diaeresis e
+sequence 0x1001e27  dead_diaeresis h
+sequence 0x10000ef  dead_diaeresis i
+sequence 0x00ef     dead_diaeresis i
+sequence 0x1001e97  dead_diaeresis t
+sequence 0x1001e85  dead_diaeresis w
+sequence 0x1001e8d  dead_diaeresis x
+sequence 0x10000ff  dead_diaeresis y
+sequence 0x00ff     dead_diaeresis y
+
+############################################################################
+# doubleacute
+
+sequence 0x1000150  dead_doubleacute O
+sequence 0x01d5     dead_doubleacute O
+sequence 0x1000170  dead_doubleacute U
+sequence 0x01db     dead_doubleacute U
+sequence 0x1000151  dead_doubleacute o
+sequence 0x01f5     dead_doubleacute o
+sequence 0x1000171  dead_doubleacute u
+sequence 0x01fb     dead_doubleacute u
+
+############################################################################
+# grave
+
+sequence 0x10000c0  dead_grave A
+sequence 0x00c0     dead_grave A
+sequence 0x10000c8  dead_grave E
+sequence 0x00c8     dead_grave E
+sequence 0x10000cc  dead_grave I
+sequence 0x00cc     dead_grave I
+sequence 0x10001f8  dead_grave N
+sequence 0x10000d2  dead_grave O
+sequence 0x00d2     dead_grave O
+sequence 0x10000d9  dead_grave U
+sequence 0x00d9     dead_grave U
+sequence 0x1001e80  dead_grave W
+sequence 0x1001ef2  dead_grave Y
+sequence 0x10000e0  dead_grave a
+sequence 0x00e0     dead_grave a
+sequence 0x10000e8  dead_grave e
+sequence 0x00e8     dead_grave e
+sequence 0x10000ec  dead_grave i
+sequence 0x00ec     dead_grave i
+sequence 0x10001f9  dead_grave n
+sequence 0x10000f2  dead_grave o
+sequence 0x00f2     dead_grave o
+sequence 0x10000f9  dead_grave u
+sequence 0x00f9     dead_grave u
+sequence 0x1001e81  dead_grave w
+sequence 0x1001ef3  dead_grave y
+
+############################################################################
+# macron
+
+sequence 0x1000100  dead_macron A
+sequence 0x03c0     dead_macron A
+sequence 0x10001e2  dead_macron AE
+sequence 0x1000112  dead_macron E
+sequence 0x03aa     dead_macron E
+sequence 0x1001e20  dead_macron G
+sequence 0x100012a  dead_macron I
+sequence 0x03cf     dead_macron I
+sequence 0x100014c  dead_macron O
+sequence 0x03d2     dead_macron O
+sequence 0x100016a  dead_macron U
+sequence 0x03de     dead_macron U
+sequence 0x1000232  dead_macron Y
+sequence 0x1000101  dead_macron a
+sequence 0x03e0     dead_macron a
+sequence 0x10001e3  dead_macron e
+sequence 0x1000113  dead_macron e
+sequence 0x03ba     dead_macron e
+sequence 0x1001e21  dead_macron g
+sequence 0x100012b  dead_macron i
+sequence 0x03ef     dead_macron i
+sequence 0x100014d  dead_macron o
+sequence 0x03f2     dead_macron o
+sequence 0x100016b  dead_macron u
+sequence 0x03fe     dead_macron u
+sequence 0x1000233  dead_macron y
+
+############################################################################
+# ogonek
+
+sequence 0x1000104  dead_ogonek A
+sequence 0x01a1     dead_ogonek A
+sequence 0x1000118  dead_ogonek E
+sequence 0x01ca     dead_ogonek E
+sequence 0x100012e  dead_ogonek I
+sequence 0x03c7     dead_ogonek I
+# XXX Collides with 0x01ea eogonek
+sequence 0x10001ea  dead_ogonek O
+sequence 0x1000172  dead_ogonek U
+sequence 0x03d9     dead_ogonek U
+sequence 0x1000105  dead_ogonek a
+sequence 0x01b1     dead_ogonek a
+sequence 0x1000119  dead_ogonek e
+sequence 0x01ea     dead_ogonek e
+sequence 0x100012f  dead_ogonek i
+sequence 0x03e7     dead_ogonek i
+sequence 0x10001eb  dead_ogonek o
+sequence 0x1000173  dead_ogonek u
+sequence 0x03f9     dead_ogonek u
+
+############################################################################
+# tilde
+
+sequence 0x1001ebc  dead_tilde E
+sequence 0x1000128  dead_tilde I
+sequence 0x03b5     dead_tilde I
+sequence 0x1000168  dead_tilde U
+sequence 0x03dd     dead_tilde U
+sequence 0x1001e7c  dead_tilde V
+sequence 0x1001ef8  dead_tilde Y
+sequence 0x1001ebd  dead_tilde e
+sequence 0x1000129  dead_tilde i
+sequence 0x03a5     dead_tilde i
+sequence 0x1000169  dead_tilde u
+sequence 0x03fd     dead_tilde u
+sequence 0x1001e7d  dead_tilde v
+sequence 0x1001ef9  dead_tilde y
+
+############################################################################
+# abovering+acute
+
+sequence 0x10001fa  dead_acute Aring
+sequence 0x10001fb  dead_acute aring
+
+############################################################################
+# breve+acute
+
+sequence 0x1001eae  dead_breve Aacute
+sequence 0x1001eaf  dead_breve aacute
+
+############################################################################
+# cedilla+acute
+
+sequence 0x1001e08  dead_acute Ccedilla
+sequence 0x1001e09  dead_acute ccedilla
+
+############################################################################
+# circumflex+acute
+
+sequence 0x1001ea4  dead_circumflex Aacute
+sequence 0x1001ebe  dead_circumflex Eacute
+sequence 0x1001ed0  dead_circumflex Oacute
+sequence 0x1001ea5  dead_circumflex aacute
+sequence 0x1001ebf  dead_circumflex eacute
+sequence 0x1001ed1  dead_circumflex oacute
+
+############################################################################
+# diaeresis+acute
+
+sequence 0x1001e2e  dead_diaeresis Iacute
+sequence 0x10001d7  dead_diaeresis Uacute
+sequence 0x1001e2f  dead_diaeresis iacute
+sequence 0x10001d8  dead_diaeresis uacute
+
+############################################################################
+# macron+acute
+
+sequence 0x1001e16  dead_macron Eacute
+sequence 0x1001e52  dead_macron Oacute
+sequence 0x1001e17  dead_macron eacute
+sequence 0x1001e53  dead_macron oacute
+
+############################################################################
+# tilde+acute
+
+sequence 0x1001e4c  dead_tilde Oacute
+sequence 0x1001e4d  dead_tilde oacute
+sequence 0x1001e78  dead_tilde Uacute
+sequence 0x1001e79  dead_tilde uacute
+
+############################################################################
+# breve+tilde
+
+sequence 0x1001eb4  dead_breve Atilde
+sequence 0x1001eb5  dead_breve atilde
+
+############################################################################
+# diaeresis+caron
+
+sequence 0x10001d9  dead_caron Udiaeresis
+sequence 0x10001da  dead_caron udiaeresis
+
+############################################################################
+# circumflex+tilde
+
+sequence 0x1001eaa  dead_circumflex Atilde
+sequence 0x1001ed6  dead_circumflex Otilde
+sequence 0x1001eab  dead_circumflex atilde
+sequence 0x1001ed7  dead_circumflex otilde
+
+############################################################################
+# diaeresis+grave
+
+sequence 0x10001db  dead_grave Udiaeresis
+sequence 0x10001dc  dead_grave udiaeresis
+
+############################################################################
+# diaeresis+macron
+
+sequence 0x10001de  dead_macron Adiaeresis
+sequence 0x100022a  dead_macron Odiaeresis
+sequence 0x10001df  dead_macron adiaeresis
+sequence 0x100022b  dead_macron odiaeresis
+sequence 0x1001e7a  dead_macron Udiaeresis
+sequence 0x1001e7b  dead_macron udiaeresis
+
+############################################################################
+# tilde+diaeresis
+
+sequence 0x1001e4e  dead_tilde Odiaeresis
+sequence 0x1001e4f  dead_tilde odiaeresis
+
+############################################################################
+# tilde+macron
+
+sequence 0x100022c  dead_macron Otilde
+sequence 0x100022d  dead_macron otilde
+
+############################################################################
+# The following diacritical combos can be typed on un!x and are therefore
+# included for completeness. However, double dead keys appear to be
+# unsupported on Windows. Instead of producing garbage, let's drop the
+# diacritics and just send the base character, which should alert the user
+# to the problem whilst still providing a useful output.
+
+# acute+abovedot
+sequence 0x1001e64  S
+sequence 0x1001e65  s
+
+# caron+abovedot
+sequence 0x1001e66  S
+sequence 0x1001e67  s
+
+# abovedot+macron
+sequence 0x10001e0  A
+sequence 0x1000230  O
+sequence 0x10001e1  a
+sequence 0x1000231  o
+
+# cedilla+breve
+sequence 0x1001e1c  E 
+sequence 0x1001e1d  e
+
+# breve+grave
+sequence 0x1001eb0  A
+sequence 0x1001eb1  a
+
+# circumflex+grave
+sequence 0x1001ea6  A
+sequence 0x1001ec0  E
+sequence 0x1001ed2  O
+sequence 0x1001ea7  a
+sequence 0x1001ec1  e
+sequence 0x1001ed3  o
+
+# circumflex+tilde
+sequence 0x1001ec4  E
+sequence 0x1001ec5  e
+
+# macron+diaeresis
+sequence 0x10001d5  U
+sequence 0x10001d6  u
+
+# macron+grave
+sequence 0x1001e14  E
+sequence 0x1001e50  O
+sequence 0x1001e15  e
+sequence 0x1001e51  o
+
+# ogonek+macron
+sequence 0x10001ec  O
+sequence 0x10001ed  o
+
