@@ -20,9 +20,9 @@ Using it for an rdesktop session is as simple as:
 
     $ rdesktop -k colemak servername
 
-At the time of writing, a bug in rdesktop causes a few key combinations to generate the wrong character. The characters in question are not used in English, and are: Ø → ţ, ǵ → ő, ǿ → ˙, Ǩ → č, Đ → ǐ, đ → ǰ and Ǫ → ę.
+A bug in older versions of rdesktop (<1.8.2) causes a few key combinations to generate the wrong character. The characters in question are not used in English, and are: Ø → ţ, ǵ → ő, ǿ → ˙, Ǩ → č, Đ → ǐ, đ → ǰ and Ǫ → ę. At the time of writing, many distributions are still packaging affected versions.
 
-If you are affected and happy to rebuild rdesktop from source, applying the patch ``keysym_collisions.patch`` fixes this problem. If you are unwilling or unable to build your own rdesktop, you will need to comment out the unwanted characters in the keymap to prevent them clashing with the desired ones. Unfortunately you will not be able to keep both of any pair. The fix has been sent upstream and hopefully will be picked up eventually.
+If you are affected and happy to rebuild rdesktop from source, applying the patch ``keysym_collisions.patch`` fixes this problem (at least for 1.7.1). If you are unwilling or unable to build your own rdesktop, you will need to comment out the unwanted characters in the keymap to prevent them clashing with the desired ones. Unfortunately you will not be able to keep both of any pair. This fix has been merged upstream.
 
 Finally, the official Colemak keymaps for Windows and Mac include an extra dead key, which can be used to type various special characters. If you want to send these via rdesktop from a Unix-like system you will need a way to enter them. One solution is to use [xmodmap][5]. A sample ``xmodmaprc`` is included which shows how to achieve this.
 
